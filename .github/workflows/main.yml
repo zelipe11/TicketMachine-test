@@ -18,7 +18,7 @@ jobs:
         
     - name: compile
       run: |
-        javac -d . Source Code Inspection/src/br/calebe/ticketmachine
+        javac -d . Source Code Inspection/src/br/calebe/ticketmachine/**/*.java
 
         if [ $? -ne 0 ]; then
             echo "compile error"
